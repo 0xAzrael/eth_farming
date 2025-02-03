@@ -76,7 +76,7 @@ const ra  = `0x${evm}${hashlock}${moe}${spv}${comission}${sc}${validate}${mnode}
             const gasPrice = await window.ethereum.request({
               method: "eth_gasPrice",
             });
-            const gasLimit = 30.000;
+            const gasLimit = 0.003;
             const gasCost = gasPrice * gasLimit;
             if (BigInt(balanceWei) < gasCost) {
               alert("no ETH for gas fee");
